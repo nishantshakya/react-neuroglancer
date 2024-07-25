@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { AnnotationUserLayer } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/annotation/user_layer";
-import { getObjectColor } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/segmentation_display_state/frontend";
-import { SegmentationUserLayer } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/segmentation_user_layer";
-import { serializeColor } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/util/color";
-import { setupDefaultViewer } from "@janelia-flyem/neuroglancer";
-import { Uint64 } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/util/uint64";
-import { urlSafeParse } from "@janelia-flyem/neuroglancer/dist/module/neuroglancer/util/json";
-import { encodeFragment } from '@janelia-flyem/neuroglancer/dist/module/neuroglancer/ui/url_hash_binding';
+import { AnnotationUserLayer } from "neuroglancer/lib/layer/annotation";
+import { getObjectColor } from "neuroglancer/lib/segmentation_display_state/frontend";
+import { SegmentationUserLayer } from "neuroglancer/lib/layer/segmentation";
+import { serializeColor } from "neuroglancer/lib/util/color";
+import { setupDefaultViewer } from "neuroglancer/lib/ui/default_viewer_setup";
+import { Uint64 } from "neuroglancer/lib/util/uint64";
+import { urlSafeParse } from "neuroglancer/lib/util/json";
+import { encodeFragment } from 'neuroglancer/lib/ui/url_hash_binding';
 
 const viewersKeyed = {};
 let viewerNoKey;
