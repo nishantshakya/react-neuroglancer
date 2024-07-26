@@ -4,7 +4,7 @@ import { AnnotationUserLayer } from "neuroglancer/lib/layer/annotation";
 import { getObjectColor } from "neuroglancer/lib/segmentation_display_state/frontend";
 import { SegmentationUserLayer } from "neuroglancer/lib/layer/segmentation";
 import { serializeColor } from "neuroglancer/lib/util/color";
-import { setupDefaultViewer } from "neuroglancer/lib/main_module";
+import { setupDefaultViewer } from "neuroglancer/lib/main";
 import { Uint64 } from "neuroglancer/lib/util/uint64";
 import { urlSafeParse } from "neuroglancer/lib/util/json";
 import { encodeFragment } from 'neuroglancer/lib/ui/url_hash_binding';
